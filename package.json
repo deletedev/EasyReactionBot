@@ -1,0 +1,41 @@
+{
+  "name": "easy-reaction-bot",
+  "version": "alpha-0.1.0",
+  "description": "Easy reactions.",
+  "main": "dist/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "distribute": "yarn build-ts && node dist/index.js",
+    "develop": "concurrently -i -k -p \"[{name}]\" -n \"Node, TypeScript\" -c \"yellow.bold,cyan.bold\" \"yarn watch-js\" \"yarn watch-ts\"",
+    "build-ts": "rm -rf dist && tsc --skipLibCheck",
+    "watch-ts": "rm -rf dist && tsc -w --skipLibCheck",
+    "watch-js": "nodemon dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/del333ted/telestructor.git"
+  },
+  "author": "Del333ted",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/del333ted/telestructor/issues"
+  },
+  "homepage": "https://github.com/del333ted/telestructor/issues#readme",
+  "dependencies": {
+    "@typegoose/typegoose": "^6.2.0",
+    "concurrently": "^5.0.2",
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.8.3",
+    "nodemon": "^2.0.2",
+    "telegraf": "^3.34.1",
+    "typescript": "^3.7.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
