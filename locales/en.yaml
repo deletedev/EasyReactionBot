@@ -1,0 +1,6 @@
+name: 'English'
+help: '
+  Hi! I am @EasyReactionBot.'
+language: Please, select the language.
+language_selected: '@EasyReactionBot now speaks English.'
+languageSettings: 'Language:'

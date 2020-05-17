@@ -1,0 +1,6 @@
+name: 'Русский'
+help: '
+  Привет! Я @EasyReactionBot.'
+language: Пожалуйста, выберите язык
+language_selected: '@EasyReactionBot теперь говорит по-русски.'
+languageSettings: 'Язык:'
